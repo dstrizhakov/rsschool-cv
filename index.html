@@ -1,48 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Document</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-   
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
                 <div class="header__wrapper">
-                    <a href="#start" class="header__logo">My <span>CV</span></a>
+                    <a href="index.html" class="header__logo">My <span>CV</span></a>
                     <!-- Логотип сайта -->
                     <nav class="header__menu menu">
                   <!-- Меню -->
                   <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#start">Start</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html#summary">Summary</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html#contacts">Contacts</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html#education">Education</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html#skills">Skills</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html#code">Code</a></li>
                   </ul>
                     </nav>
                 </div>
             </div>
         </header>
-        <main class="main">
+        <main class="main" id="start">
             <div class="main__container">
-                <h1>Strizhakov Dmitry</h1>
-                <section class="main__contacts contacts">
-                    <h2>Contacts</h2>
+                <div class="ancor" id="summary"></div>
+                <section class="main__info info">
+                    <div class="info__text">
+                        <h1>Strizhakov Dmitry</h1>
+                        <h3>FrontEnd developer</h3>
+                        <p> @About me { I am a junior front-end developer with 1 year experience. I am currently actively expanding my knowledge for React development and looking for a position as a react.js developer in a company that will become a second home, where I can quickly grow and develop web development skills every day. }
+                        </p>
+                    </div>
+                    <div class="info__photo">
+                        <img src="/img/avatar.jpg" alt="avatar">
+                    </div> 
                 </section>
-                <section class="main__education education">
-                    <h2>Education</h2>
+                <div class="ancor" id="contacts"></div>
+                <section class="main__contacts contacts page" id="contacts">
+                    <h2>Contacts</h2>
+                    <div class="contacts__row">
+                            <ul class="contacts__list">
+                                <li>@Phone {<a href="tel:+79281642864">+79281642864</a>}</li>
+                                <li>@Email {<a href="mailto:d.strizhakov@gmail.com">d.strizhakov@gmail.com</a>}</li>
+                                <li>@Telegram {<a href="https://telegram.me/DmitryStrizhakov" target="_blank">@DmitryStrizhakov</a>}</li>
+                            </ul> 
+                    </div>
+                </section>
+                <div class="ancor" id="education"></div>
+                <section class="main__education education page">
+                    <h2>Education and Courses</h2>
+                    <ul class="education__list">
+                        <li><b>1993-2003:</b> Secondary School</li>
+                        <li><b>2003-2008:</b> Taganrog State University Of Radio Engeneering</li>
+                        <li><b>2008-2020:</b> Self study and working in Beta-Air JSC</li>
+                        <li><b>2020-2021:</b> Freelancer for life courses by <a href="https://fls.guru/">fls.guru</a></li>
+                        <li><b>2021-2022:</b> Way Of Samurai courses by <a href="https://it-kamasutra.com/">it-kamasutra.com</a></li>
+                        <li><b>2022 to the present:</b> <a href="https://app.rs.school/">RS School</a></li>
+                    </ul>
+                </section>
+                <div class="ancor" id="skills"></div>
+                <section class="main__skills skills page">
+                    <h2>Professional skills</h2>
+                    <ul class="skills__list">
+                        <li>@Programming skills { • React • React Hooks • Redux • Mobx • Rest API • JavaScript • GIT • Pug • Webpack • Gulp }</li>
+                        <li>@Style sheets skills { • HTML5/SCSS • SCSS modules • Styled-Components • Flexbox • Grid Layout • Adaptive layout • Cross-browser layout • BEM methodology}</li>
+                        <li>@Additional libraries { • Redux toolkit • RTK Query • React-redux • Redux-form • Formik • React-router-dom • Redux-thunk • Axios }</li>
+                    </ul>
+                </section>
+                <div class="ancor" id="code"></div>
+                <section class="main__code code page">
+                    <h2>Code example</h2>
+                    <code>
+                        <pre>
+const expandedForm = n => n.toString()
+.split("")
+.reverse()
+.map( (a, i) => a * Math.pow(10, i))
+.filter(a => a > 0)
+.reverse()
+.join(" + ");
+                        </pre>
+                    </code>
                 </section>
             </div>
-            
-            
-           
-        я Мэин
         </main>
         <footer class="footer">
-        Я в подвале
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    Я в подвале
+                </div>
+            </div>
         </footer>
     </div>
 
