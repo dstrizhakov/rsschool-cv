@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+/* Минимальное обнуление стилей */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+  color:#9599ff;
+  transition: 0.3s ease 0s;
+  }
+  
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: none;
+    color: #ff034a;
+  }
+
+li {
+    list-style-type: none;
+    padding-bottom: 8px;
+   }
+ul {
+    margin-left: 0; 
+    padding-left: 0;
+   }
+
+
+
+   
+html,
+body {
+  font-family: 'PT Sans', sans-serif;
+  height: 100%;
+  min-width: 320px;
+  color: rgb(255, 213, 0);
+  background: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* Прижимаем footer к низу */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+.wrapper > main {
+    flex: 1 1 auto;
+  }
+.wrapper > * {
+    min-width: 0;
+  }
+
+/*
+Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+*/
+  [class*=__container] {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    z-index: 99;
+  }
+ 
+.header__wrapper {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+
+.header__logo span{
+    font-weight: 700;
+    letter-spacing: 5px;
+    color:rgb(255, 0, 0);
+  }
+.menu__list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.menu__link {
+  transition: 0.3s ease 0s;
+  }
+
+.menu__item {
+    padding-bottom: 0;
+  }
+  
+.menu__link:hover {
+    color: #ff3535;
+  }
+
+/* Main */
+
+.main {
+}
+.ancor {
+  padding: 20px 0px;
+}
+.ancor:first-child {
+  padding: 45px 0px;
+}
+
+.info__text {
+  flex: 0 1 auto;
+  padding-right: 15px;
+  
+}
+.info__text p{
+padding: 20px 0px;
+font-size: 18px;
+line-height: 130%;
+}
+
+
+.info__photo{
+position: relative;
+padding: 10% 20%;
+height: 300px;
+}
+.info__photo img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.page {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+}
+.page h1 {
+  font-size: 36px;
+  }
+
+.page h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.page h3 {
+  margin: 10px 0;
+  }
+
+.education__languages {
+  display: flex;
+  gap: 20px;
+}
+.education__languages li {
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.code {
+margin-bottom: 40px;
+}
+.code__const {
+  color: #2f40ff;
+}
+.code__func {
+  color: #03ff07;
+}
+.code__arg {
+  color: #5197fa;
+}
+.code__method {
+  color: #ff03ea;
+}
+.code__brack {
+  color: #ffcd03;
+}
+.code__text {
+  color: #ec8005;
+}
+/* footer */
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+}
+
+.footer__wrapper {
+}
+.footer__row {
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__img {
+  height: 28px;
+}
+
+
+/* Плавная прокрутка */
+
+  :root {
+    scroll-behavior: smooth;
+  }
+
+
+/* Медиа запросы */
+  @media (min-width: 600px) {
+    .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+  }
+  @media (max-width: 600px) {
+    .header__wrapper {
+      justify-content: center;
+    }
+    .header__logo {
+      display: none;
+    }
+    .ancor {
+      padding: 15px 0px;
+    }
+    .ancor:first-child {
+  padding: 40px 0px;
+}
+  }
