@@ -46,7 +46,7 @@ body {
   height: 100%;
   min-width: 320px;
   color: rgb(255, 213, 0);
-  background: url(/img/background.jpg);
+  background: url(img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
