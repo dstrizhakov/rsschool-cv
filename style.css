@@ -26,7 +26,7 @@ a {
   
 a:hover {
     text-decoration: none;
-    color: #ff034a;
+    color: #f6ff00;
   }
 
 li {
@@ -100,22 +100,31 @@ body {
   }
 .menu__list {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
   }
 
 .menu__link {
   transition: 0.3s ease 0s;
+  position: relative;
   }
+.menu__link::before {
+    position: absolute;
+    content: "";
+    top:24px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #f6ff00;
+    transition: all 0.3s ease 0s;
+  }
+
 
 .menu__item {
     padding-bottom: 0;
   }
   
-.menu__link:hover {
-    color: #ff3535;
-  }
 
 /* Стили Main */
 
@@ -139,7 +148,7 @@ line-height: 130%;
 position: relative;
 padding: 10% 20%;
 height: 300px;
-border: 1px solid rgba(255, 255, 255, 0.5);
+border: 2px solid rgba(255, 255, 255, 0.1);
 border-radius: 5px;
 }
 .info__photo img{
@@ -156,7 +165,7 @@ border-radius: 5px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .page h1 {
   font-size: 36px;
@@ -176,13 +185,22 @@ margin-bottom: 20px;
   gap: 20px;
 }
 .education__languages li {
-  padding: 5px;
-  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
 .code {
 margin-bottom: 40px;
+}
+.code__js{
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
 }
 .code__const {
   color: #2f40ff;
@@ -268,6 +286,7 @@ margin-bottom: 40px;
     }
     .page {
       border: none;
+      border-radius: 0;
       padding: 50px 20px 10px;
     }
     .code {
@@ -275,5 +294,10 @@ margin-bottom: 40px;
     }
     .footer {
       font-size: 16px;
+    }
+  }
+  @media (any-hover: hover) {
+    .menu__link:hover::before {
+      width: 100%;
     }
   }
