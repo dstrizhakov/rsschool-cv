@@ -19,53 +19,55 @@ a {
   transition: 0.3s ease 0s;
   }
   
-  a:link,
-  a:visited {
+a:link,
+a:visited {
     text-decoration: none;
   }
   
 a:hover {
     text-decoration: none;
-    color: #f6ff00;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
   }
 
 li {
     list-style-type: none;
     padding-bottom: 8px;
    }
+
 ul {
     margin-left: 0; 
     padding-left: 0;
    }
 
-
-
 /* Базовые стили страницы */  
 html,
 body {
-  font-family: 'PT Sans', sans-serif;
-  height: 100%;
-  min-width: 320px;
-  color: rgb(255, 187, 0);
-  background-color: rgb(14, 17, 29);
-}
+    font-family: 'PT Sans', sans-serif;
+    height: 100%;
+    min-width: 320px;
+    color: rgb(255, 187, 0);
+    background-color: rgb(14, 17, 29);
+  }
 
 /* Прижимаем footer к низу */
 .wrapper {
+    position: relative;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
+
 .wrapper > main {
     flex: 1 1 auto;
   }
+
 .wrapper > * {
     min-width: 0;
   }
 
-/* стили для контейнера, будут применяться ко всем __container*/
-
+/* стили для контейнера, будут применяться ко всем классам __container*/
   [class*=__container] {
     max-width: 920px;
     margin: 0 auto;
@@ -73,7 +75,6 @@ body {
   }
 
 /* Стили Header */
-
 .header {
     position: fixed;
     top: 0;
@@ -85,7 +86,7 @@ body {
     font-weight: 700;
     z-index: 99;
   }
- 
+
 .header__wrapper {
     min-height: 50px;
     display: flex;
@@ -93,7 +94,7 @@ body {
     justify-content: space-between;  
   }
 
-.header__logo span{
+.header__logo span {
     font-weight: 700;
     letter-spacing: 5px;
     color:rgb(255, 164, 17);
@@ -109,49 +110,50 @@ body {
   transition: 0.3s ease 0s;
   position: relative;
   }
+
 .menu__link::before {
     position: absolute;
     content: "";
     top:24px;
     left: 0;
-    width: 0%;
-    height: 4px;
-    background-color: #f6ff00;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease 0s;
   }
-
 
 .menu__item {
     padding-bottom: 0;
   }
   
-
 /* Стили Main */
-
 .ancor {
   padding: 20px 0px;
 }
+
 .ancor:first-child {
-  padding: 45px 0px;
+  padding: 35px 0px;
 }
 
 .info__text {
   padding-right: 15px;
 }
 
-.info__text p{
-padding: 20px 0;
-line-height: 130%;
+.info__text p {
+  padding: 20px 0;  
+  line-height: 130%;
 }
 
-.info__photo{
-position: relative;
-padding: 10% 20%;
-height: 300px;
-border: 2px solid rgba(255, 255, 255, 0.1);
-border-radius: 5px;
+.info__photo {
+  position: relative;
+  padding: 10% 20%;
+  height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
-.info__photo img{
+
+.info__photo img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -164,26 +166,55 @@ border-radius: 5px;
 .page {
   border: 3px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease 0s;
   padding: 20px;
   border-radius: 10px;
 }
+
 .page h1 {
   font-size: 36px;
-  }
+}
 
 .page h2 {
-text-align: center;
-margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .page h3 {
   margin: 10px 0;
+}
+
+/* Education */
+.education__list li {
+  position: relative;
+}
+
+.education__list li::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -10px;
+  width: 1px;
+  height: 20px;
+  border-left: 1px dashed #ffcc00;
+  }
+
+.education__list li::after{
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -14px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffcc00;
   }
 
 .education__languages {
   display: flex;
   gap: 20px;
 }
+
 .education__languages li {
   padding: 10px;
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -191,10 +222,12 @@ margin-bottom: 20px;
   border-radius: 5px;
 }
 
+/* Code */
 .code {
-margin-bottom: 40px;
+margin-bottom: 20px;
 }
-.code__js{
+
+.code__js {
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.2);
@@ -202,35 +235,38 @@ margin-bottom: 40px;
   padding: 10px;
   border-radius: 10px;
 }
+
 .code__const {
   color: #2f40ff;
 }
+
 .code__func {
   color: #03ff07;
 }
+
 .code__arg {
   color: #5197fa;
 }
+
 .code__method {
   color: #ff03ea;
 }
+
 .code__brack {
   color: #ffcd03;
 }
+
 .code__text {
   color: #ec8005;
 }
-/* footer */
 
+/* Footer */
 .footer {
-    background-color: rgb(121, 121, 197);
-    border-top: 3px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    font-size: 18px;
+  background-color: rgb(121, 121, 197);
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  font-size: 18px;
 }
 
-.footer__wrapper {
-}
 .footer__row {
   padding: 10px 0;
   display: flex;
@@ -238,18 +274,14 @@ margin-bottom: 40px;
   align-items: center;
   justify-content: space-around;
 }
-
 .footer__img {
   height: 28px;
 }
 
-
 /* Плавная прокрутка */
-
   :root {
     scroll-behavior: smooth;
   }
-
 
 /* Медиа запросы */
   @media (min-width: 600px) {
@@ -259,43 +291,56 @@ margin-bottom: 40px;
     justify-content: space-between;
     }
   }
+
   @media (max-width: 600px) {
+
     .header {
       font-size: 16px;
     }
+
     .header__wrapper {
       justify-content: center;
     }
+
     .header__logo {
       display: none;
     }
+
     .ancor {
       padding: 15px 0px;
     }
+
     .ancor:first-child {
       padding: 40px 0px;
     }
+
     .main__container {
       padding: 0px;
     }
+
     .ancor {
       padding: 0px 0px;
     }
+
     .ancor:first-child {
       padding: 25px 0px;
     }
+
     .page {
       border: none;
       border-radius: 0;
       padding: 50px 20px 10px;
     }
+
     .code {
       margin-bottom: 0px;
     }
+
     .footer {
       font-size: 16px;
     }
   }
+
   @media (any-hover: hover) {
     .menu__link:hover::before {
       width: 100%;
