@@ -1,135 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Dmitry Strizhakov CV</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Dmitry Strizhakov CV</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header class="header">
-            <div class="header__container">
-                <div class="header__wrapper">
-                    <a href="index.html" class="header__logo">My <span>CV</span></a>
-                    <!-- Логотип сайта -->
-                    <nav class="header__menu menu">
-                    <!-- Меню -->
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="index.html#summary">Summary</a></li>
-                        <li class="menu__item"><a class="menu__link" href="index.html#contacts">Contacts</a></li>
-                        <li class="menu__item"><a class="menu__link" href="index.html#education">Education</a></li>
-                        <li class="menu__item"><a class="menu__link" href="index.html#skills">Skills</a></li>
-                        <li class="menu__item"><a class="menu__link" href="index.html#code">Code</a></li>
-                    </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-- Main -->
-        <main class="main" id="start">
-            <div class="main__container">
-                <div class="ancor" id="summary"></div>
-                 <!-- Секция Info -->
-                <section class="main__info info page">
-                    <div class="info__text">
-                        <h1>{Strizhakov Dmitry}</h1>
-                        <h3>[FrontEnd developer]</h3>
-                        <p>
-                            <span class="code__func">@About me</span> 
-                            <span class="code__brack">{</span>
-                            <span class="code__arg">I am a junior front-end developer
-                                with 1 year experience. I am currently actively expanding
-                                my knowledge for React development and looking for a position
-                                as a react.js developer in a company that will become a
-                                second home, where I can quickly grow and develop web
-                                development skills every day. 
-                            </span> 
-                            <span class="code__brack">}</span>
-                        </p>
-                    </div>
-                    <div class="info__photo">
-                        <img src="img/avatar.jpg" alt="avatar">
-                    </div> 
-                </section>
-                <div class="ancor" id="contacts"></div>
-                <!-- Секция Contacts -->
-                <section class="main__contacts contacts page">
-                    <h2>[Contacts]</h2>
-                    <div class="contacts__row">
-                            <ul class="contacts__list">
-                                <li><span class="code__func">@Phone</span> <span class="code__brack">{</span><a href="tel:+79281642864">+79281642864</a><span class="code__brack">}</span></li>
-                                <li><span class="code__func">@Email</span> <span class="code__brack">{</span><a href="mailto:d.strizhakov@gmail.com">d.strizhakov@gmail.com</a><span class="code__brack">}</span></li>
-                                <li><span class="code__func">@Telegram</span> <span class="code__brack">{</span><a href="https://telegram.me/DmitryStrizhakov" target="_blank">@DmitryStrizhakov</a><span class="code__brack">}</span></li>
-                            </ul> 
-                    </div>
-                </section>
-                <div class="ancor" id="education"></div>
-                <!-- Секция Education -->
-                <section class="main__education education page">
-                    <h2>[Education and experience]</h2>
-                    <ul class="education__list">
-                        <li><b><span class="code__func">1993-2003</span>: </b>Secondary School</li>
-                        <li><b><span class="code__func">2003-2008</span>: </b>Taganrog State University Of Radio Engeneering</li>
-                        <li><b><span class="code__func">2008-2020</span>: </b>Self study and working in Beta-Air JSC</li>
-                        <li><b><span class="code__func">2020-2021</span>: </b>Freelancer for life courses by <a href="https://fls.guru/">fls.guru</a></li>
-                        <li><b><span class="code__func">2021-2022</span>: </b>Way Of Samurai courses by <a href="https://it-kamasutra.com/">it-kamasutra.com</a></li>
-                        <li><b><span class="code__func">2022 to the present</span>: </b><a href="https://app.rs.school/">RS School</a></li>
-                    </ul>
-                    <h3>[Languages]</h3>
-                    <ul class="education__languages">
-                        <li><b>Russian:</b> Native</li>
-                        <li><b>English:</b> B1</li>
-                    </ul>
-                    <h3>[Projects]</h3>
-                    <ul class="education__projects">
-                        <li><b>
-                                <span class="code__func">Todo</span> -
-                            </b>
-                            Todo list with Title, Details, File, Deadline:   
-                            <a href="https://todo-list-1b479.web.app" target="_blank">Demo</a>
-                            <a href="https://gitlab.com/work595/todo" target="_blank">Code</a>
-                        </li>
-                        <li>
-                            <b>
-                                <span class="code__func">Funiro</span> -
-                            </b>
-                             Responsive Website Using HTML, SCSS & JavaScript:  
-                             <a href="https://dstrizhakov.github.io/funiro/" target="_blank">Demo</a> 
-                             <a href="https://github.com/dstrizhakov/funiro" target="_blank">Code</a>
-                        </li>
-                    </ul>
-                </section>
-                <div class="ancor" id="skills"></div>
-                <!-- Секция Skills -->
-                <section class="main__skills skills page">
-                    <h2>[Professional skills]</h2>
-                    <ul class="skills__list">
-                        <li><span class="code__func">@Programming skills</span> 
-                            <span class="code__brack">{</span>
-                            <span class="code__arg"> • React • React Hooks • Redux • Mobx • Rest API • JavaScript • GIT • Pug • Webpack • Gulp</span> 
-                            <span class="code__brack">}</span>
-                        </li>
-                        <li><span class="code__func">@Style sheets skills</span>
-                            <span class="code__brack">{</span>
-                            <span class="code__arg"> • HTML5/SCSS • SCSS modules • Styled-Components • Flexbox • Grid Layout • Adaptive layout • Cross-browser layout • BEM methodology</span>
-                            <span class="code__brack">}</span>
-                        </li>
-                        <li><span class="code__func">@Additional libraries</span>
-                            <span class="code__brack">{</span>
-                            <span class="code__arg"> • Redux toolkit • RTK Query • React-redux • Redux-form • Formik • React-router-dom • Redux-thunk • Axios </span>
-                            <span class="code__brack">}</span>
-                        </li>
-                    </ul>
-                </section>
-                <div class="ancor" id="code"></div>
-                <!-- Секция Code -->
-                <section class="main__code code page">
-                    <h2>[Code example]</h2>
-                        <pre>
+	<div class="progress-bar" id="progressBar"></div>
+	<div class="wrapper">
+		<!-- Header -->
+		<header class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logo">My <span>CV</span></a>
+					<!-- Логотип сайта -->
+					<nav class="header__menu menu">
+						<!-- Меню -->
+						<ul class="menu__list">
+							<li class="menu__item"><a class="menu__link" href="index.html#summary">Summary</a></li>
+							<li class="menu__item"><a class="menu__link" href="index.html#contacts">Contacts</a></li>
+							<li class="menu__item"><a class="menu__link" href="index.html#education">Education</a></li>
+							<li class="menu__item"><a class="menu__link" href="index.html#skills">Skills</a></li>
+							<li class="menu__item"><a class="menu__link" href="index.html#code">Code</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- Main -->
+		<main class="main" id="start">
+			<div class="main__container">
+				<div class="ancor" id="summary"></div>
+				<!-- Секция Info -->
+				<section class="main__info info page">
+					<div class="info__text">
+						<h1>{Strizhakov Dmitry}</h1>
+						<h3>[FrontEnd developer]</h3>
+						<p>
+							<span class="code__func">@About me</span>
+							<span class="code__brack">{</span>
+							<span class="code__arg">I am a junior front-end developer
+								with 1 year experience. I am currently actively expanding
+								my knowledge for React development and looking for a position
+								as a react.js developer in a company that will become a
+								second home, where I can quickly grow and develop web
+								development skills every day.
+							</span>
+							<span class="code__brack">}</span>
+						</p>
+					</div>
+					<div class="info__photo">
+						<img src="img/avatar.jpg" alt="avatar">
+					</div>
+				</section>
+				<div class="ancor" id="contacts"></div>
+				<!-- Секция Contacts -->
+				<section class="main__contacts contacts page">
+					<h2>[Contacts]</h2>
+					<div class="contacts__row">
+						<ul class="contacts__list">
+							<li><span class="code__func">@Phone</span> <span class="code__brack">{</span><a
+									href="tel:+79281642864">+79281642864</a><span class="code__brack">}</span></li>
+							<li><span class="code__func">@Email</span> <span class="code__brack">{</span><a
+									href="mailto:d.strizhakov@gmail.com">d.strizhakov@gmail.com</a><span
+									class="code__brack">}</span></li>
+							<li><span class="code__func">@Telegram</span> <span class="code__brack">{</span><a
+									href="https://telegram.me/DmitryStrizhakov" target="_blank">@DmitryStrizhakov</a><span
+									class="code__brack">}</span></li>
+						</ul>
+					</div>
+				</section>
+				<div class="ancor" id="education"></div>
+				<!-- Секция Education -->
+				<section class="main__education education page">
+					<h2>[Education and experience]</h2>
+					<ul class="education__list">
+						<li><b><span class="code__func">1993-2003</span>: </b>Secondary School</li>
+						<li><b><span class="code__func">2003-2008</span>: </b>Taganrog State University Of Radio Engeneering
+						</li>
+						<li><b><span class="code__func">2008-2020</span>: </b>Self study and working in Beta-Air JSC</li>
+						<li><b><span class="code__func">2020-2021</span>: </b>Freelancer for life courses by <a
+								href="https://fls.guru/">fls.guru</a></li>
+						<li><b><span class="code__func">2021-2022</span>: </b>Way Of Samurai courses by <a
+								href="https://it-kamasutra.com/">it-kamasutra.com</a></li>
+						<li><b><span class="code__func">2022 to the present</span>: </b><a href="https://app.rs.school/">RS
+								School</a></li>
+					</ul>
+					<h3>[Languages]</h3>
+					<ul class="education__languages">
+						<li><b>Russian:</b> Native</li>
+						<li><b>English:</b> B1</li>
+					</ul>
+					<h3>[Projects]</h3>
+					<ul class="education__projects">
+						<li><b>
+								<span class="code__func">Todo</span> -
+							</b>
+							Todo list with Title, Details, File, Deadline:
+							<a href="https://todo-list-1b479.web.app" target="_blank">Demo</a>
+							<a href="https://gitlab.com/work595/todo" target="_blank">Code</a>
+						</li>
+						<li>
+							<b>
+								<span class="code__func">Funiro</span> -
+							</b>
+							Responsive Website Using HTML, SCSS & JavaScript:
+							<a href="https://dstrizhakov.github.io/funiro/" target="_blank">Demo</a>
+							<a href="https://github.com/dstrizhakov/funiro" target="_blank">Code</a>
+						</li>
+					</ul>
+				</section>
+				<div class="ancor" id="skills"></div>
+				<!-- Секция Skills -->
+				<section class="main__skills skills page">
+					<h2>[Professional skills]</h2>
+					<ul class="skills__list">
+						<li><span class="code__func">@Programming skills</span>
+							<span class="code__brack">{</span>
+							<span class="code__arg"> • React • React Hooks • Redux • Mobx • Rest API • JavaScript • GIT • Pug •
+								Webpack • Gulp</span>
+							<span class="code__brack">}</span>
+						</li>
+						<li><span class="code__func">@Style sheets skills</span>
+							<span class="code__brack">{</span>
+							<span class="code__arg"> • HTML5/SCSS • SCSS modules • Styled-Components • Flexbox • Grid Layout •
+								Adaptive layout • Cross-browser layout • BEM methodology</span>
+							<span class="code__brack">}</span>
+						</li>
+						<li><span class="code__func">@Additional libraries</span>
+							<span class="code__brack">{</span>
+							<span class="code__arg"> • Redux toolkit • RTK Query • React-redux • Redux-form • Formik •
+								React-router-dom • Redux-thunk • Axios </span>
+							<span class="code__brack">}</span>
+						</li>
+					</ul>
+				</section>
+				<div class="ancor" id="code"></div>
+				<!-- Секция Code -->
+				<section class="main__code code page">
+					<h2>[Code example]</h2>
+					<pre>
                             <code class="code__js">
 <span class="code__const">const</span> <span class="code__func">expandedForm</span> = <span class="code__arg">n</span> => <span class="code__arg">n</span>.<span class="code__method">toString</span><span class="code__brack">()</span>
 .<span class="code__method">split</span><span class="code__brack">(</span><span class="code__text">""</span><span class="code__brack">)</span>
@@ -140,25 +157,27 @@
 .<span class="code__method">join</span><span class="code__brack">(</span><span class="code__text">" + "</span><span class="code__brack">)</span>;
                             </code>                   
                         </pre>
-                </section>
-            </div>
-        </main>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__wrapper">
-                    <div class="footer__row">
-                        <a href="https://github.com/dstrizhakov" target="_blank">
-                            <img class="footer__img" src="img/github_logo.svg" alt="githab" title="Link to Github">
-                        </a>
-                        <span>2022 © Dmitry Strizhakov</span>
-                        <a href="https://rs.school/js/" target="_blank">
-                            <img class="footer__img" src="img/rs_school_js.svg" alt="rsschool" title="Link to Rsschool">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+				</section>
+			</div>
+		</main>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__row">
+						<a href="https://github.com/dstrizhakov" target="_blank">
+							<img class="footer__img" src="img/github_logo.svg" alt="githab" title="Link to Github">
+						</a>
+						<span>2022 © Dmitry Strizhakov</span>
+						<a href="https://rs.school/js/" target="_blank">
+							<img class="footer__img" src="img/rs_school_js.svg" alt="rsschool" title="Link to Rsschool">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/index.js"></script>
 </body>
+
 </html>
